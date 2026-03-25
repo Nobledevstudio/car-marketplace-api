@@ -43,8 +43,7 @@ backend/
 ├── models/            # Mongoose schemas (User, Car, Booking, Purchase)
 ├── middlewares/       # Authorization, authentication, error handling
 ├── config/            # DB connection (db.js)
-├── server.js          # Express app setup
-├── index.js           # Entry point
+├── server.js          # Express app setup and Entry point
 ├── tests/             # Jest/Supertest tests
 ├── .gitignore
 ├── package.json
@@ -89,7 +88,7 @@ npm start
 
 ### 📌 Key Endpoints
 | Method | Endpoint                      | Description                          |
-|--------|-------------------------------|--------------------------------------|
+|--------|-------------------------------|---------------------------------------|
 | POST   | /api/auth/register             | Register a new user                  |
 | POST   | /api/auth/login                | Login and receive JWT                |
 | POST   | /api/cars                      | Dealer creates a car (requires approval) |
