@@ -44,6 +44,7 @@ backend/
 ├── middlewares/       # Authorization, authentication, error handling
 ├── config/            # DB connection (db.js)
 ├── server.js          # Express app setup and Entry point
+├── seedScript.js      # Admin scripts
 ├── tests/             # Jest/Supertest tests
 ├── .gitignore
 ├── package.json
