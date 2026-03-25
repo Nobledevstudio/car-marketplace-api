@@ -1,0 +1,71 @@
+import bookingModel from "../models/bookingModel.js";
+import userModel from "../models/userModel.js";
+
+
+export const getAllBookingsForAdmin=(user)=>{
+ 
+  if (user.role === "admin") {
+    return bookingModel.find({})
+      .populate("car")
+      .populate("user", "name email")
+      .sort({ createdAt: -1 });
+  }
+  
+}
+
+export const getUsers = async(user)=>{
+
+   if(user.role !== "admin"){
+     throw new Error("Not anuthorized")
+   }
+
+  const users = await userModel.find({role :{$in : ['customer', "dealer"]}});
+
+   return users
+
+  }
+export const deleteUser = async (id) => {
+
+  const user = await userModel.findByIdAndDelete(id)
+
+  if (user.role === "admin") {
+    throw new Error("Admin account cannot be deleted")
+  }
+
+  if (!user) {
+    throw new Error("User not found")
+  }
+
+  return user
+}
+
+export const approveDealer = async (dealerId, user) => {
+
+  if (!user) {
+    throw new Error("User not authenticated")
+  }
+
+  if (user.role !== 'admin') {
+    throw new Error("Not authorized")
+  }
+
+  const dealer = await userModel.findById(dealerId)
+
+  if (!dealer) {
+    throw new Error("Dealer not found")
+  }
+
+  if (dealer.role !== 'dealer') {
+    throw new Error("This user is not a dealer")
+  }
+
+  if (dealer.isApproved === true) {
+    throw new Error("Dealer already approved")
+  }
+
+  dealer.isApproved = true
+  
+  await dealer.save()
+
+  return dealer
+}
