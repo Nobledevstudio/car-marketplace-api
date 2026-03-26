@@ -131,7 +131,7 @@ Authorization: Bearer YOUR_TOKEN
 ```bash
 npm test
 ```
-### API Testing ThunderClient
+### 📸 API Testing (ThunderClient)
 
 ### Get All Cars
 ![Get Cars](/screenshots/get-cars.png)
@@ -141,6 +141,19 @@ npm test
 
 ### Create Car (Dealer)
 ![Get Cars](/screenshots/dealer-create-car.png)
+
+### Create Booking (Customer)
+![Get Cars](/screenshots/create-booking.png)
+
+### Already Booked (Customer)
+![Get Cars](/screenshots/already-booked.png)
+
+### Invalid Booking Date (Customer)
+![Get Cars](/screenshots/invalid-booking-date.png)
+
+
+
+
 
 
 ---
