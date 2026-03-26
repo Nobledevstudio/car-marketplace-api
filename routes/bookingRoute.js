@@ -7,7 +7,7 @@ import { authorizeRoles } from '../middleware/authorizeRole.js';
 const bookingRouter = express.Router();
 
 
-bookingRouter.post('/create-booking' , protect, authorizeRoles('customer'), createBookingController);
+bookingRouter.post('/' , protect, authorizeRoles('customer'), createBookingController);
 bookingRouter.get('/user' , protect, authorizeRoles('customer'), getUserBookingController);
 bookingRouter.patch('/:id/cancel-booking' , protect, authorizeRoles('customer'), cancelBookingController);
 bookingRouter.get('/dealer', protect, authorizeRoles('dealer'), getBookingsForDealerController)

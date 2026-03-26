@@ -5,7 +5,7 @@ import { createPurchaseController, userPurchaseController, cancelPurchaseControl
 
 const purchaseRouter = express.Router()
 
-purchaseRouter.post('/create-purchase', protect, authorizeRoles('customer'),createPurchaseController)
+purchaseRouter.post('/', protect, authorizeRoles('customer'),createPurchaseController)
 purchaseRouter.get('/user', protect, authorizeRoles('customer', 'admin'), userPurchaseController)
 purchaseRouter.patch('/:id/cancel-purchase', protect, authorizeRoles('customer'), cancelPurchaseController)
 purchaseRouter.get('/dealer', protect, authorizeRoles('dealer'), ViewPurchasesController)

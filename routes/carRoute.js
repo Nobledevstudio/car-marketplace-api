@@ -6,7 +6,7 @@ import { createCarController, deleteController, updateCarController, viewAllCarC
 const carRouter = express.Router()
 
 carRouter.post('/create', protect, authorizeRoles('dealer'), createCarController)
-carRouter.get('/viewall', viewAllCarController)
+carRouter.get('/', viewAllCarController)
 carRouter.get('/view/:id', viewCarByIdController)
 carRouter.put('/update/:id', protect, authorizeRoles('dealer'), updateCarController)
 carRouter.delete('/delete/:id', protect, authorizeRoles('dealer','admin'), deleteController);

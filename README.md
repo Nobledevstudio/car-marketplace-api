@@ -98,7 +98,7 @@ npm start
 | PATCH  | /api/cars/:id                  | Update car (dealer only)             |
 | DELETE | /api/cars/:id                  | Delete car (dealer/admin)            |
 | POST   | /api/bookings                  | Create a booking                     |
-| GET    | /api/bookings                  | Get user bookings                     |
+| GET    | /api/bookings/user                  | Get user bookings                     |
 | PATCH  | /api/bookings/:id/cancel       | Cancel booking (before start date)  |
 | GET    | /api/bookings/dealer           | Dealer views their car bookings      |
 | GET    | /api/bookings/admin            | Admin views all bookings             |
@@ -131,6 +131,17 @@ Authorization: Bearer YOUR_TOKEN
 ```bash
 npm test
 ```
+### API Testing ThunderClient
+
+### Get All Cars
+![Get Cars]('/screenshots/get-cars.png')
+
+### User Login (JWT Auth) 
+![Login]('/screenshots/login.png')
+
+### Create Car (Dealer)
+![Get Cars]('/screenshots/dealer-create-car.png')
+
 
 ---
 

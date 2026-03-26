@@ -6,7 +6,7 @@ import { authorizeRoles } from "../middleware/authorizeRole.js";
 const paymentRouter = express.Router();
 
 // Complete a purchase
-paymentRouter.post("/purchase/complete/:id", protect, authorizeRoles("customer"), completePurchaseController);
+paymentRouter.post("/complete/:id", protect, authorizeRoles("customer"), completePurchaseController);
 
 // Complete a booking
 paymentRouter.post("/booking/complete/:id", protect, authorizeRoles("customer"), completeBookingController);
