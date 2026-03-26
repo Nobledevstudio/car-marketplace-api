@@ -170,7 +170,6 @@ npm test
 - Implement **rate limiting** & security enhancements  
 - Integrate with **React/Next.js frontend**  
 - Add **search, filters, and sort functionality**  
-- Include **screenshots of requests & responses** for documentation
 
 ---
 
