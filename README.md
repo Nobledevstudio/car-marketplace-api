@@ -134,13 +134,13 @@ npm test
 ### API Testing ThunderClient
 
 ### Get All Cars
-![Get Cars]('/screenshots/get-cars.png')
+![Get Cars](/screenshots/get-cars.png)
 
 ### User Login (JWT Auth) 
-![Login]('/screenshots/login.png')
+![Login](/screenshots/login.png)
 
 ### Create Car (Dealer)
-![Get Cars]('/screenshots/dealer-create-car.png')
+![Get Cars](/screenshots/dealer-create-car.png)
 
 
 ---
