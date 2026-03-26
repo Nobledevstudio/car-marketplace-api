@@ -151,6 +151,12 @@ npm test
 ### Invalid Booking Date (Customer)
 ![Get Cars](/screenshots/invalid-booking-date.png)
 
+### Purchase Car (Customer)
+![Get Cars](/screenshots/invalid-booking-date.png)
+
+### Payment (Customer)
+![Get Cars](/screenshots/invalid-booking-date.png)
+
 
 
 
