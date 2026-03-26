@@ -10,7 +10,7 @@ const bookingRouter = express.Router();
 bookingRouter.post('/' , protect, authorizeRoles('customer'), createBookingController);
 bookingRouter.get('/user' , protect, authorizeRoles('customer'), getUserBookingController);
 bookingRouter.patch('/:id/cancel-booking' , protect, authorizeRoles('customer'), cancelBookingController);
-bookingRouter.get('/dealer', protect, authorizeRoles('dealer'), getBookingsForDealerController)
+bookingRouter.get('/dealer', protect, authorizeRoles('dealer'), getBookingsForDealerController);
 
 
 export default bookingRouter;
