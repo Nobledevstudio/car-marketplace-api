@@ -152,10 +152,10 @@ npm test
 ![Get Cars](/screenshots/invalid-booking-date.png)
 
 ### Purchase Car (Customer)
-![Get Cars](/screenshots/invalid-booking-date.png)
+![Get Cars](/screenshots/purchase-car.png)
 
 ### Payment (Customer)
-![Get Cars](/screenshots/invalid-booking-date.png)
+![Get Cars](/screenshots/payment.png)
 
 
 
