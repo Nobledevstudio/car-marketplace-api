@@ -1,4 +1,4 @@
-# 🚗 Car Marketplace — Node.js Backend
+# 🚗 DriveHub — Node.js Backend
 
 ### 🛠️ Project Overview
 **Car Marketplace Backend** is a production-ready **Node.js & Express API** powering a car marketplace.  
