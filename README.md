@@ -1,7 +1,7 @@
 # 🚗 DriveHub — Node.js Backend
 
 ### 🛠️ Project Overview
-**Car Marketplace Backend** is a production-ready **Node.js & Express API** powering a car marketplace.  
+**DriveHub Backend** is a production-ready **Node.js & Express API** powering a car marketplace.  
 It allows users to browse, rent, and purchase cars, with **role-based access** for customers, dealers, and admin.
 
 The backend demonstrates **real-world backend functionality** including authentication, bookings, purchases, admin management, and proper business logic validation.
